@@ -23,7 +23,11 @@ jobs:
           repository: asyncapi/website
           path: website
           fetch-depth: 1
-
+          
+      - name: Debug file structure2
+        run: |
+          find . -maxdepth 4 -ls | head -200
+          
       - name: Sync docs into website
         run: |
           rm -rf website/markdown/docs/tools/generator/*
