@@ -1,0 +1,17 @@
+{
+  "name": "my-asyncapi-template",
+  "version": "1.0.0",
+  "generator": {
+    "supportedProtocols": ["mqtt", "kafka"],
+    "parameters": {
+      "version": {
+        "description": "Overrides application version",
+        "required": false
+      }
+    }
+  },
+  "dependencies": {
+    "@asyncapi/generator-react-sdk": "^0.2.25"
+  }
+}
+
