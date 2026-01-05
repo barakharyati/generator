@@ -26,6 +26,7 @@ jobs:
         run: |
           rm -rf website/markdown/docs/tools/generator/*
           cp -R apps/generator/docs/* website/markdown/docs/tools/generator/
+          find . -name package.json
           rm website/markdown/docs/tools/generator/README.md
           rm -r website/markdown/docs/tools/generator/jsdoc2md-handlebars
           printf "%s\ntitle: Generator\nweight: 3\n%s" "---" "---"> website/markdown/docs/tools/generator/_section.md
